@@ -1,0 +1,18 @@
+{
+    "manifest_version": 2,
+    "name": "checker",
+    "version": "1.0",
+
+    "description": "Extension to help make grading student's websites easier",
+
+    "icons": {
+    "48": "icons/border-48.png"
+    },
+
+    "content_scripts": [
+        {
+            "matches": ["http://127.0.0.1/*", "http://localhost/*.html"],
+            "js": ["checker.js"]
+        }
+    ]
+}
